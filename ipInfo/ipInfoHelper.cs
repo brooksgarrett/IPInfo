@@ -191,7 +191,7 @@ namespace com.brooksgarrett.ipInfo
              * http://code.google.com/apis/chart/types.html#maps
              */
 
-            string api = @"http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,EAF7FE&chco=FFFFFF,FF0000,FFFF00,00FF00";
+            string api_url = @"http://chart.apis.google.com/chart?cht=t&chtm=usa&chs=440x220&chf=bg,s,EAF7FE&chco=FFFFFF,FF0000,FFFF00,00FF00";
             //&chld=GAALAKFLTN&chd=t:0,100,50,32,60
             string chld = "&chld=";
             string chd = "&chd=t:";
@@ -210,12 +210,12 @@ namespace com.brooksgarrett.ipInfo
             }
 
 
-            api += chld;
-            api += chd;
+            api_url += chld;
+            api_url += chd;
             
             
 
-            return api;
+            return api_url;
         }
 
         public UInt32 hashIP(string ip)
